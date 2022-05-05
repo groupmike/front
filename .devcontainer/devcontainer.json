@@ -7,26 +7,35 @@
 		// Update 'VARIANT' to pick a Node version: 16, 14, 12.
 		// Append -bullseye or -buster to pin to an OS version.
 		// Use -bullseye variants on local on arm64/Apple Silicon.
-		"args": { 
+		"args": {
 			"VARIANT": "16-bullseye"
 		}
 	},
-
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
-
-	// Add the IDs of extensions you want installed when the container is created.
+	"settings": {
+		"prettier.semi": false, // N'ajoute pas les ; en fin de lignes
+		"prettier.singleQuote": false, // Utilise "" au lieu de ''
+		"prettier.printWidth": 120, // Formate à 120 caractères au lieu de 80 par lignes
+		"prettier.useTabs": true, // Indentation par tabulation au lieu d'espaces
+		"prettier.tabWidth": 4, // Une tabulation vaut 4 espaces
+	},
 	"extensions": [
-		"dbaeumer.vscode-eslint"
+		"ms-ceintl.vscode-language-pack-fr", // VSCode en Français
+		"dbaeumer.vscode-eslint", // ESLint
+		"esbenp.prettier-vscode", // Prettier, pour formater le code
+		"visualstudioexptteam.vscodeintellicode", // IA d'aide au codage
+		"dsznajder.es7-react-js-snippets", // ES7 React Snippets
+		"mgmcdermott.vscode-language-babel", // Babel syntax
+		"ecmel.vscode-html-css", // CSS snippets
+		"abusaidm.html-snippets", // HTML snippets
+		"formulahendry.auto-rename-tag", // Aide pour renommer les tags
+		"ms-vscode-remote.remote-containers", // Dev Containers
+		"eamodio.gitlens", // Gestionnaire GIT
+		"mhutchie.git-graph", // Affichage des commits GIT en graphique
 	],
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
-
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node"
 }
