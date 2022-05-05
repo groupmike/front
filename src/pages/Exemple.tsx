@@ -1,9 +1,9 @@
 import React from "react"
 
-import "../styles/Exemple/Exemple.css"
-import logo from "../styles/Exemple/logo.svg"
+import "../assets/Exemple/Exemple.css"
+import logo from "../assets/Exemple/logo.svg"
 
-function Exemple() {
+const Exemple = () => {
 	return (
 		<header className="App-header">
 			<img src={logo} className="App-logo" alt="logo" />

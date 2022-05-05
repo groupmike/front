@@ -4,7 +4,7 @@ type IngridProps = {
 	name: string
 }
 
-function HelloName({ name }: IngridProps) {
+const HelloName = ({ name }: IngridProps) => {
 	return <>Hello {name}</>
 }
 

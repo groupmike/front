@@ -1,7 +1,7 @@
 import React from "react"
 import HelloName from "../components/Ingrid/HelloName"
 
-function Ingrid() {
+const Ingrid = () => {
 	return <HelloName name="Ingrid" />
 }
 

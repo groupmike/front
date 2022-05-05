@@ -1,7 +1,7 @@
 import React from "react"
 import HelloName from "../components/Joel/HelloName"
 
-function Joel() {
+const Joel = () => {
 	return <HelloName name="Joel" />
 }
 

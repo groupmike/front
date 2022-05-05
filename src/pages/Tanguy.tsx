@@ -1,7 +1,7 @@
 import React from "react"
 import HelloName from "../components/Tanguy/HelloName"
 
-function Tanguy() {
+const Tanguy = () => {
 	return <HelloName name="Tanguy" />
 }
 

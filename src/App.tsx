@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom" // Gestion des routes
+import { Routes, Route } from "react-router-dom" // Gestion des routes
 
 import Drawer from "./components/Drawer" // Le menu de navigation
 import Exemple from "./pages/Exemple" // L'exemple de base de react (je l'ai déplacé)
@@ -21,10 +21,10 @@ function App() {
 	 * Route : Définition d'une route
 	 */
 	return (
-		<Router>
-			<div>
-				<Drawer />
-				<hr />
+		<>
+			<Drawer />
+			<hr />
+			<main>
 				<Routes>
 					<Route path="/" element={<Exemple />} />
 					<Route path="/tanguy" element={<Tanguy />} />
@@ -33,8 +33,8 @@ function App() {
 					<Route path="/ingrid" element={<Ingrid />} />
 					<Route path="/thomas" element={<Thomas />} />
 				</Routes>
-			</div>
-		</Router>
+			</main>
+		</>
 	)
 }
 
