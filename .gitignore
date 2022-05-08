@@ -8,6 +8,10 @@
 logs
 **/*.backup.*
 **/*.back.*
+.env
+
+package-lock.json
+yarn.lock
 
 npm-debug.log*
 yarn-debug.log*
