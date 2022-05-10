@@ -13,18 +13,19 @@
 	},
 	"extensions": {
 		"recommendations": [
-			"ms-ceintl.vscode-language-pack-fr", // VSCode en Français
-			"dbaeumer.vscode-eslint", // ESLint
-			"esbenp.prettier-vscode", // Prettier, pour formater le code
-			"visualstudioexptteam.vscodeintellicode", // IA d'aide au codage
-			"dsznajder.es7-react-js-snippets", // ES7 React Snippets
-			"mgmcdermott.vscode-language-babel", // Babel syntax
-			"ecmel.vscode-html-css", // CSS snippets
-			"abusaidm.html-snippets", // HTML snippets
-			"formulahendry.auto-rename-tag", // Aide pour renommer les tags
-			"ms-vscode-remote.remote-containers", // Dev Containers
-			"eamodio.gitlens", // Gestionnaire GIT
-			"mhutchie.git-graph", // Affichage des commits GIT en graphique
+			"ms-ceintl.vscode-language-pack-fr",
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"visualstudioexptteam.vscodeintellicode",
+			"dsznajder.es7-react-js-snippets",
+			"mgmcdermott.vscode-language-babel",
+			"ecmel.vscode-html-css",
+			"abusaidm.html-snippets",
+			"formulahendry.auto-rename-tag",
+			"ms-vscode-remote.remote-containers",
+			"eamodio.gitlens",
+			"mhutchie.git-graph",
+			"bradlc.vscode-tailwindcss"
 		]
 	}
 }

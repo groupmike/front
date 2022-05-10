@@ -5,7 +5,7 @@ type IngridProps = {
 }
 
 const HelloName = ({ name }: IngridProps) => {
-	return <>Hello {name}</>
+	return <p className="text-parfete-rose font-handwriting">Hello {name}</p>
 }
 
 export default HelloName
