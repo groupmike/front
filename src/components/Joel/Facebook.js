@@ -1,49 +1,61 @@
-import React, { Component } from "react";
-import FacebookLoginBtn from "react-facebook-login";
+import React, { useState } from "react";
+import FacebookLogin from 'react-facebook-login';
 
-export default class LoginFacebook extends Component {
-    state = {
-        auth: false,
-        name: '',
-        picture: ''
+
+function FacebookLoginComponent() {
+  const [login, setLogin] = useState(false);
+  const [data, setData] = useState({});
+  const [picture, setPicture] = useState("");
+
+  const responseFacebook = (response) => {
+    console.log(response);
+    // Login failed
+    if (response.status === "unknown") {
+      alert("Login failed!");
+      setLogin(false);
+      return false;
     }
-
-    componentClicked = ()=>{
-        console.log('Facebook btn clicked');
+    setData(response);
+    setPicture(response.picture.data.url);
+    if (response.accessToken) {
+      setLogin(true);
+    } else {
+      setLogin(false);
     }
+  };
+  const logout = () => {
+    setLogin(false);
+    setData({});
+    setPicture("");
+  };
 
-    responseFacebook = (response) => {
-        console.log(response);
-        this.setState({
-            auth: true,
-            name: response.name,
-            picture: response.picture.data.url,
-        })
-    }
+  return (
+    <div className="container">
+      {!login && (
+        <FacebookLogin
+          appId=''
+          autoLoad={false}
+          fields="name,email,picture"
+          scope="public_profile,email"
+          callback={responseFacebook}
+          icon="fa-facebook"
+        />
+      )}
 
-    render(){
-        let facebookData;
-
-        this.state.auth ?
-            facebookData = (
-                <div>
-                    <img src={this.state.picture} alt={this.state.name} />
-		            <h3>Welcome {this.state.name}</h3>
-                </div>
-            ):
-            facebookData = (
-            <FacebookLoginBtn 
-                appId=""
-                autoLoad={true}
-                fields="name,picture"
-                onClick={this.componentClicked}
-                callback={this.responseFacebook} />
-            );
-        
-        return(
-            <>
-                {facebookData}
-            </>
-        );
-    }
+      {login && (
+        <div className="card">
+          <div className="card-body">
+            <img className="rounded" src={picture} alt="Profile" />
+            <h5 className="card-title">{data.name}</h5>
+            <p className="card-text">Email ID: {data.email}</p>
+            <a href="" className="btn btn-danger btn-sm" onClick={logout}>
+              Logout
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
+
+export default FacebookLoginComponent;
