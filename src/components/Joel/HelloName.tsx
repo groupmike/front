@@ -1,5 +1,5 @@
 import React from "react"
-import Facebook from '../Joel/Facebook'
+import Facebook from './FacebookLoginComponent'
 
 type IngridProps = {
 	name: string
