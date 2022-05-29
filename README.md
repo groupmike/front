@@ -10,11 +10,11 @@ Installer Docker sur sa machine.
 
 Par HTTPS
 
-`git clone https://github.com/groupmike/front.git`
+`git clone https://github.com/parfete/front.git`
 
 Par SSH
 
-`git clone git@github.com:groupmike/front.git`
+`git clone git@github.com:parfete/front.git`
 
 ### Utilisation de l'api en local
 
