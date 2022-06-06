@@ -1,16 +1,34 @@
 # Parfete Front
 
+## Prérequis
+
+Installer Docker sur sa machine.
+
 ## Installation du projet
 
 ### Récupération sur GIT
 
 Par HTTPS
 
-`git clone https://github.com/groupmike/front.git`
+`git clone https://github.com/parfete/front.git`
 
 Par SSH
 
-`git clone git@github.com:groupmike/front.git`
+`git clone git@github.com:parfete/front.git`
+
+### Utilisation de l'api en local
+
+A la racine du projet il y a un fichier docker-compose.yml. Il suffit de lancer la commande suivante pour lancer l'api sur sa machine :
+
+```bash
+docker compose up -d
+```
+
+et pour stopper l'api et clean les instances
+
+```bash
+docker compose down
+```
 
 ### Workspace pour VSCode
 
@@ -20,11 +38,9 @@ Aller sur le fichier `front.code-workspace` puis `Ouvrir un espace de travail`
 
 ### Workspace avec Dev Container
 
-POUR LE MOMENT N'EST PAS FONCTIONNEL
+    POUR LE MOMENT N'EST PAS FONCTIONNEL
 
 Installer l'extension VSCode `ms-vscode-remote.remote-containers`
-
-Installer Dockers sur sa machine
 
 Ouvrir une fenêtre distante (logo vert en bas à gauche de VSCode)
 
