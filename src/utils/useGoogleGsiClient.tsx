@@ -137,7 +137,7 @@ export default function useGoogleGsiClient(
 			// On remplace la DIV par le bouton de connexion
 			if (params.button) {
 				window.google.accounts.id.renderButton(document.getElementById(params.button_divId), {
-					type: "icon",
+					type: "standard",
 					theme: "outline",
 					size: "large",
 					width: "300",
@@ -191,7 +191,7 @@ export default function useGoogleGsiClient(
  * @return user Informations de connexion
  */
 export const useConnect = (
-	client_id: string | null,
+	client_id: string | null | undefined,
 	button: boolean = true,
 	oneTap: boolean = false,
 	newParams = {}
@@ -237,3 +237,5 @@ export const useScopeAccess = (
 
 	return { accessToken: sessionStorage.getItem("accessToken") ?? accessToken }
 }
+
+// Todo: Déconnexion
