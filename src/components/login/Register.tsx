@@ -1,5 +1,3 @@
-//import { emit } from "process";
-//import { FormEvent, useState } from "react";
 import { useForm } from "react-hook-form";
 import { RegisterData } from "../../types/credentials";
 import { registerWithEmailAndPassword } from "../../utils/auth";
