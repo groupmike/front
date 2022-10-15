@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,sublimetext,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,sublimetext,react
 
@@ -91,3 +90,4 @@ GitHub.sublime-settings
 # Support for Project snippet scope
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,sublimetext,react
+.firebase/
