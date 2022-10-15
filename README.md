@@ -1,5 +1,21 @@
 # Parfete Front
 
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=bugs)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=parfete_front&metric=coverage)](https://sonarcloud.io/summary/new_code?id=parfete_front)
+
 ## Prérequis
 
 Installer Docker sur sa machine.
