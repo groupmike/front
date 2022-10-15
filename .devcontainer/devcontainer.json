@@ -31,11 +31,15 @@
 		"ms-vscode-remote.remote-containers", // Dev Containers
 		"eamodio.gitlens", // Gestionnaire GIT
 		"mhutchie.git-graph", // Affichage des commits GIT en graphique
+		"bradlc.vscode-tailwindcss" //Intelligent Tailwind CSS tooling for VS Code
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {}
+	}
 }
