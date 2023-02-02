@@ -18,6 +18,10 @@ on:
   schedule:
     - cron: '33 20 * * 2'
 
+permissions:
+  security-events: write
+  contents: read
+
 jobs:
   eslint:
     name: Run eslint scanning
