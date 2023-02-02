@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:lts-alpine as build
+FROM node:lts-alpine AS build
 
 # set working directory
 WORKDIR /app
@@ -16,7 +16,7 @@ RUN npm install react-scripts -g --silent
 ENV PATH /app/node_modules/.bin:$PATH
 
 # add app
-COPY . ./
+COPY ./ ./
 
 RUN npm run build
 
